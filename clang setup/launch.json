@@ -1,0 +1,55 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        // {
+        //     "name": "(lldb) Launch",
+        //     "type": "cppdbg",
+        //     "request": "launch",
+        //     "program": "${fileDirname}/${fileBasenameNoExtension}",
+        //     "args": [],
+        //     "stopAtEntry": false,
+        //     "cwd": "${fileDirname}",
+        //     "environment": [],
+        //     "externalConsole": false,
+        //     "MIMode": "lldb"
+        // },
+        {
+            "name": "clang++ - Build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/main",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false, // Ensure no external terminal is used
+            "internalConsoleOptions": "openOnSessionStart", // Automatically opens the Debug Console
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang++ build active file",
+            "logging": {
+                "engineLogging": false,
+                "traceResponse": false,
+                "trace": false
+            }
+        },
+        {
+            "name": "clang++ - Build and debug main.cpp",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/main",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false, // Ensure no external terminal is used
+            "internalConsoleOptions": "openOnSessionStart", // Automatically opens the Debug Console
+            "MIMode": "lldb",
+            "preLaunchTask": "C/C++: clang++ build main.cpp",
+            "logging": {
+                "engineLogging": false,
+                "traceResponse": false,
+                "trace": false
+            }
+        }
+    ]
+}
